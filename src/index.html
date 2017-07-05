@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>OctansTD: Development Build</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" href="icons/touch-icon-iphone-60x60.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/touch-icon-ipad-76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/touch-icon-iphone-retina-120x120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/touch-icon-ipad-retina-152x152.png">
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <!-- Canvas placeholder -->
+        <div id="screen"></div>
+
+        <!-- melonJS Library -->
+        <!-- build:js js/app.min.js -->
+        <script type="text/javascript" src="lib/melonJS.js"></script>
+
+        <!-- Plugin(s) -->
+        <script type="text/javascript" src="lib/plugins/debug/debugPanel.js"></script>
+
+        <!-- Game Scripts -->
+        <script type="text/javascript" src="js/game.js"></script>
+        <script type="text/javascript" src="js/gamefunctions.js"></script>
+        <script type="text/javascript" src="build/js/resources.js"></script>
+
+        <script type="text/javascript" src="js/entities/tower_menu.js"></script>
+        <script type="text/javascript" src="js/entities/option_menu.js"></script>
+        <script type="text/javascript" src="js/entities/HUD.js"></script>
+        <script type="text/javascript" src="js/entities/projectiles.js"></script>
+        <script type="text/javascript" src="js/entities/archerTower.js"></script>
+        <script type="text/javascript" src="js/entities/cannonTower.js"></script>
+        <script type="text/javascript" src="js/entities/slowTower.js"></script>
+        
+        <script type="text/javascript" src="js/entities/archerTowerMenu.js"></script>
+        <script type="text/javascript" src="js/entities/cannonTowerMenu.js"></script>
+        <script type="text/javascript" src="js/entities/slowTowerMenu.js"></script>
+
+        <!-- MapNodes -->
+        <script type="text/javascript" src="js/entities/entities.js"></script>
+
+        <!-- Enemy Files -->
+        <script type="text/javascript" src="js/entities/goblinEntity.js"></script>
+        <script type="text/javascript" src="js/entities/footmanEntity.js"></script>
+        <script type="text/javascript" src="js/entities/impEntity.js"></script>       
+
+        <!-- Scenes -->
+        <script type="text/javascript" src="js/screens/title.js"></script>
+        <script type="text/javascript" src="js/screens/instructions.js"></script>
+        <script type="text/javascript" src="js/screens/level01.js"></script>
+        <script type="text/javascript" src="js/screens/level02.js"></script>
+        <script type="text/javascript" src="js/screens/level03.js"></script>
+        <script type="text/javascript" src="js/screens/gameOver.js"></script>
+        <script type="text/javascript" src="js/screens/levelIntro.js"></script>
+
+
+        <!-- Bootstrap -->
+        <script type="text/javascript">
+            window.onReady(function onReady() {
+                game.onload();
+            });
+        </script>
+    </body>
+</html>

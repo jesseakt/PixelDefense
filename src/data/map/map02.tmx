@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="23" tilewidth="32" tileheight="32" nextobjectid="126">
+ <tileset firstgid="1" name="wood_tileset" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="../img/maps/wood_tileset.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="257" name="trees_plants_rocks" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="../img/maps/trees_plants_rocks.png" width="512" height="512"/>
+  <tile id="196">
+   <properties>
+    <property name="image" type="file" value="../img/towers/tower_location.png"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="513" name="stone-bridge" tilewidth="32" tileheight="32" tilecount="160" columns="16">
+  <image source="../img/maps/stone-bridge.png" width="512" height="320"/>
+ </tileset>
+ <tileset firstgid="673" name="tilesheet" tilewidth="32" tileheight="32" tilecount="1960" columns="20">
+  <image source="../img/maps/tilesheet.png" width="640" height="3136"/>
+ </tileset>
+ <tileset firstgid="2633" name="tilesheet" tilewidth="32" tileheight="32" tilecount="0" columns="10">
+  <image source="../../../../Images/img/1/tilesheet.png" width="320" height="1568"/>
+ </tileset>
+ <imagelayer name="Image Layer 1">
+  <image source="../img/maps/map02.png" width="1280" height="736"/>
+ </imagelayer>
+ <objectgroup name="MapNodes">
+  <object id="76" name="KillNode" type="KillNode" x="1296.67" y="376.667" width="5" height="5">
+   <properties>
+    <property name="moveDirection" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="93" name="MapNode" type="MapNode1" x="46" y="39" width="5" height="5">
+   <properties>
+    <property name="moveDirection" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="112" name="MapNode" type="MapNode17" x="644.667" y="318.667" width="5" height="5">
+   <properties>
+    <property name="moveDirection" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="113" name="MapNode" type="MapNode17" x="842" y="380" width="5" height="5">
+   <properties>
+    <property name="moveDirection" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="114" name="MapNode" type="MapNode17" x="640.667" y="446.667" width="5" height="5">
+   <properties>
+    <property name="moveDirection" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="115" name="ForkNode" x="576" y="384" width="5.5" height="5.5"/>
+  <object id="121" name="MapNode" type="MapNode17" x="766" y="318" width="5" height="5">
+   <properties>
+    <property name="moveDirection" type="int" value="315"/>
+   </properties>
+  </object>
+  <object id="122" name="MapNode" type="MapNode17" x="783.333" y="446" width="5" height="5">
+   <properties>
+    <property name="moveDirection" type="int" value="45"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="TowerLocations">
+  <object id="65" name="TowerLocationEntity" x="216.667" y="279" width="64" height="64"/>
+  <object id="66" name="TowerLocationEntity" x="1145.67" y="284" width="64" height="64"/>
+  <object id="68" name="TowerLocationEntity" x="126.333" y="424.667" width="64" height="64"/>
+  <object id="72" name="TowerLocationEntity" x="845.333" y="421.667" width="64" height="64"/>
+  <object id="101" name="TowerLocationEntity" x="338" y="424.667" width="64" height="64"/>
+  <object id="102" name="TowerLocationEntity" x="899.67" y="284.667" width="64" height="64"/>
+  <object id="105" name="TowerLocationEntity" x="1037" y="423.333" width="64" height="64"/>
+  <object id="120" name="TowerLocationEntity" x="672" y="352" width="64" height="64"/>
+  <object id="123" name="TowerLocationEntity" x="632.5" y="219" width="64" height="64"/>
+  <object id="124" name="TowerLocationEntity" x="646.667" y="489.333" width="64" height="64"/>
+  <object id="125" name="TowerLocationEntity" x="445" y="281" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup name="EnemyEntities">
+  <object id="94" name="ImpEntity" type="EnemyEntity" x="-74.3333" y="337.333" width="64" height="64">
+   <properties>
+    <property name="moveDirection" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="95" name="FootmanEntity" type="EnemyEntity" x="-85" y="341.333" width="64" height="64">
+   <properties>
+    <property name="moveDirection" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="96" name="GoblinEntity" type="EnemyEntity" x="-82.3333" y="350.333" width="64" height="64">
+   <properties>
+    <property name="moveDirection" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="TowerMenu"/>
+</map>
